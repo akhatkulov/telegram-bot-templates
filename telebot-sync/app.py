@@ -1,6 +1,6 @@
 import telebot
 
-from alch import create_user, get_step, put_step, user_count, get_all_user, \
+from data.alchemy import create_user, get_step, put_step, user_count, get_all_user, \
     get_channel, put_channel, get_channel_with_id, delete_channel
 
 from helper.buttons import admin_buttons,channel_control,join_key
@@ -9,7 +9,7 @@ import conf
 
 bot = telebot.TeleBot(conf.BOT_TOKEN, parse_mode="html")
 
-admin_id = conf.ADMIN_id
+admin_id = conf.ADMIN_ID
 
 def join(user_id):
     try:

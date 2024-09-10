@@ -1,13 +1,13 @@
 import telebot
 from telebot.async_telebot import AsyncTeleBot
-from alch import create_user, get_step, put_step, user_count, get_all_user, get_channel, put_channel, get_channel_with_id, delete_channel
+from data.alchemy import create_user, get_step, put_step, user_count, get_all_user, get_channel, put_channel, get_channel_with_id, delete_channel
 from helper.buttons import admin_buttons, channel_control, join_key
 
 import conf
 import asyncio
 
 API_TOKEN = conf.BOT_TOKEN
-ADMIN_ID = conf.ADMIN_id
+ADMIN_ID = conf.ADMIN_ID
 
 bot = AsyncTeleBot(API_TOKEN, parse_mode="html")
 

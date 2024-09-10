@@ -1,5 +1,5 @@
 from telebot.types import InlineKeyboardButton, InlineKeyboardMarkup, KeyboardButton, ReplyKeyboardMarkup,ReplyKeyboardRemove
-from alch import get_channel
+from data.alchemy import get_channel
 def admin_buttons():
     x = InlineKeyboardMarkup(row_width=1)
     btn1 = InlineKeyboardButton(text="Statistika", callback_data="stat")
